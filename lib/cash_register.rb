@@ -16,6 +16,7 @@ def add_item(item_name, price, quantity=1)
     @items << item_name
   end
   self.last_transaction = price * quantity
+  #Why do we need this to be an attr_accessor?
 end
 
 def apply_discount
